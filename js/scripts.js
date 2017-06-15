@@ -1,16 +1,10 @@
-
-for ( var k = 0 ; k < 3 ; k++) {
-  var a = prompt('Enter base of triangle'),
-      h = prompt('Enter height of triangle');
-
-  if ((isNaN(a) || isNaN(h)) || ((a <= 0) || (h <= 0))) {
-    console.log('Triangle parameters are wrong'); //triangle parameters checking
+function getTriangleArea(a, h) {                //function for triangle area calculation
+  if (a > 0 && h > 0) {
+    return (a * h / 2);
   } else {
-  function getTriangleArea(a, h) {                //function for triangle area calculation
-    return (a * h / 2);                  
-  }
-  var triangleArea = getTriangleArea(a, h)
-  console.log(k + 1 + ' triangle ' + 'field with base a: ' + a + ' and height h: ' + h 
-  	+ ' is equal to: ' + getTriangleArea(a, h));
+    console.log('Nieprawidłowe dane');
   }
 }
+console.log('triangle1Area = ' + getTriangleArea(4, 0));
+console.log('triangle2Area = ' + getTriangleArea(0, 12));
+console.log('triangle3Area = ' + getTriangleArea(9, 15));
