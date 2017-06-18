@@ -1,10 +1,6 @@
 function getTriangleArea(a, h) {                //function for triangle area calculation
-  if (a > 0 && h > 0) {
-    return (a * h / 2);
-  } else {
-    console.log('Nieprawidłowe dane');
-  }
-}
-console.log('triangle1Area = ' + getTriangleArea(4, 0));
+  return a > 0 && h > 0 ? a * h / 2 : 'Nieprawidłowe dane';
+  };
+console.log('triangle1Area = ' + getTriangleArea(14, 23));
 console.log('triangle2Area = ' + getTriangleArea(0, 12));
-console.log('triangle3Area = ' + getTriangleArea(9, 15));
+console.log('triangle3Area = ' + getTriangleArea(19, 15));
